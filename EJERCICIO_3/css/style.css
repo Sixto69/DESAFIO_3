@@ -10,8 +10,11 @@ nav{
    grid-area: menu;
    background: #0037a1;
    color: white;
+   
 
 }
+
+
 
 main {
    grid-area: seccion-principal;
@@ -22,13 +25,13 @@ main {
 
 footer {
    grid-area: pie-de-pagina;
-   background: white;
    color: white;
-   padding: 5px;
+   padding: 10px;
  
 }
 p{
    text-align: center;
+
 }
 .filtros{
    text-align: center;
@@ -39,7 +42,6 @@ p{
 
 div {
    display: grid;
-   border: 1px solid black;
    grid-template-rows: 5fr 10fr 1fr;
    grid-template-areas:
    "menu"
@@ -60,7 +62,7 @@ div {
 @media (min-width: 992px) {
    div{
    grid-template-areas:
-   "menu seccion-principal"
+   "menu"
    "menu seccion-principal"
    "menu pie-de-pagina";
    grid-template-columns: 6rem 1fr;
@@ -70,11 +72,20 @@ div {
 a{
    color: white;
    text-decoration: none;
+   text-align: center;
+
 }
 
 .fa-brands {
    font-size: 20px;
-   margin: 10;
+   margin: 10px;
+   
+}
+.fa-solid{
+   font-size: 20px;
+   margin: 10px;
+   
+
 }
 .pagination{
    display: flex;
@@ -92,18 +103,14 @@ img{
    grid-template-columns: repeat(3, 1fr);
    grid-template-rows: repeat(2, 2fr);
    gap: 20px;
+   
  
 }
 .card{
-   
    gap: 20px;
    padding: 20px;
-   margin: 20px;
-   
+   margin: 30px;
 }
-
-
-
 
 
 
